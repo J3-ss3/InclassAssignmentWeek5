@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'mail', url: 'https://github.com/J3-ss3/InclassAssignmentWeek5.git'
+                git branch: 'master', url: 'https://github.com/J3-ss3/InclassAssignmentWeek5.git'
             }
         }
 
