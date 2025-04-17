@@ -10,6 +10,12 @@ pipeline {
         SONAR_TOKEN = 'sqa_fa4b690c52006cb1f69b4e06885255320f557366' // Store the token securely
     }
 
+    stage('Debug PATH') {
+        steps {
+            sh 'echo $PATH'
+        }
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -38,6 +44,5 @@ pipeline {
                     }
             }
         }
-
     }
 }
