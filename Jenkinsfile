@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ADirin/sep2_week5_inclass_s2.git'
+                git branch: 'mail', url: 'https://github.com/J3-ss3/InclassAssignmentWeek5.git'
             }
         }
 
