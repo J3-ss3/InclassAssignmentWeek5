@@ -12,7 +12,6 @@ pipeline {
         DOCKERHUB_REPO = 'jess3/inclassassignmentweek5'
         DOCKER_IMAGE_TAG = 'latest_v1'
         PATH = "/usr/local/bin:$PATH"
-        DOCKER_CONTEXT = 'default' // or 'desktop-linux' if applicable
     }
 
 
