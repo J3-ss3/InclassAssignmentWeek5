@@ -15,14 +15,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
-                    bat """
+                    sh """
                         sonar-scanner ^
                         -Dsonar.projectKey=devops-demo ^
                         -Dsonar.sources=src ^
