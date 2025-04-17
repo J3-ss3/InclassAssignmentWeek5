@@ -8,7 +8,7 @@ pipeline {
     environment {
         SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
         SONAR_TOKEN = 'sqa_fa4b690c52006cb1f69b4e06885255320f557366' // Store the token securely
-        DOCKERHUB_CREDENTIALS_ID = 'Docker_hub_jenkins'
+        DOCKERHUB_CREDENTIALS_ID = 'DockerCredNew'
         DOCKERHUB_REPO = 'jess3/inclassassignmentweek5'
         DOCKER_IMAGE_TAG = 'latest_v1'
         PATH = "/usr/local/bin:$PATH"
