@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+            maven 'MVN' // Replace 'Maven' with the name of the Maven installation in Jenkins
+        }
+
     environment {
         SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
         SONAR_TOKEN = 'sqa_fa4b690c52006cb1f69b4e06885255320f557366' // Store the token securely
